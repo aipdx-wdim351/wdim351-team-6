@@ -30,5 +30,3 @@ wdim351-team-6
 14. When you say auto-responder, what specifically are you referencing? Is this in regards to an email address, a contact form, or a newsletter sign up?
 
 15. You mentioned managing follow ups and service calls. Are you wanting your website to manage your customer base or do you already use a customer management system?
-
-hello world
