@@ -1,0 +1,115 @@
+// Variables --------------------
+$greyTest: #444444;
+$primary: #f90101;
+$defaultFont: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headlineFont: "Magra", sans-serif;
+$navHeight: 75px;
+$pageWidth: 960px; // Default page width
+$sideWidth: 320px; // Default sidebar width
+
+// Reusable --------------------
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: $defaultFont;
+}
+
+
+// Reusable --------------------
+.fullScreen {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: $greyTest;
+	display: block;
+}
+
+.defaultPos {
+	margin: 0 auto;
+	width: $pageWidth;
+}
+
+
+// Layout Rules --------------------
+nav[role="main"] {
+	@extend .fullScreen;
+	height: $navHeight;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	ul {
+		@extend .defaultPos;
+		line-height: $navHeight;
+		padding: 0;
+	}
+}
+
+.nav {
+	list-style-type: none;
+	li {
+		display: inline-block;
+		margin-right: 15px;
+		a {
+			color: #FFF;
+			&:link{
+				text-decoration: none;
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.lt-ie8 .nav li {
+	display: inline;
+}
+
+#outerWrapper {
+	top: $navHeight + 25;
+	position: relative;
+	padding-bottom: $navHeight;
+	#wrapper {
+		background: lighten($greyTest, 65%);
+	}
+}
+
+.sidebar {
+	width: $sideWidth;
+	min-height: 585px;
+	float: right;
+	background: lighten($greyTest, 55%);
+}
+
+.content {
+	width: $pageWidth - $sideWidth;
+}
+
+footer {
+	background: lighten($greyTest, 40%);
+	height: $navHeight;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	section {
+		height: $navHeight;
+		width: $sideWidth;
+		float: right;
+		background: lighten($greyTest, 30%);
+	}
+	nav {
+		width: $pageWidth - $sideWidth;
+		ul {
+			padding: 0;
+		}
+	}
+}
+
+
+// Utils --------------------
+.clear {
+	clear: both;
+}

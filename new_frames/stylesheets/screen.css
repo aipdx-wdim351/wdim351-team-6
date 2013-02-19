@@ -1,0 +1,117 @@
+/* line 11, ../sass/screen.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 21, ../sass/screen.scss */
+.fullScreen, nav[role="main"] {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #444444;
+  display: block;
+}
+
+/* line 29, ../sass/screen.scss */
+.defaultPos, nav[role="main"] ul {
+  margin: 0 auto;
+  width: 960px;
+}
+
+/* line 36, ../sass/screen.scss */
+nav[role="main"] {
+  height: 75px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+/* line 42, ../sass/screen.scss */
+nav[role="main"] ul {
+  line-height: 75px;
+  padding: 0;
+}
+
+/* line 49, ../sass/screen.scss */
+.nav {
+  list-style-type: none;
+}
+/* line 51, ../sass/screen.scss */
+.nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+/* line 54, ../sass/screen.scss */
+.nav li a {
+  color: #FFF;
+}
+/* line 56, ../sass/screen.scss */
+.nav li a:link {
+  text-decoration: none;
+}
+/* line 59, ../sass/screen.scss */
+.nav li a:hover {
+  text-decoration: underline;
+}
+
+/* line 66, ../sass/screen.scss */
+.lt-ie8 .nav li {
+  display: inline;
+}
+
+/* line 70, ../sass/screen.scss */
+#outerWrapper {
+  top: 100px;
+  position: relative;
+  padding-bottom: 75px;
+}
+/* line 74, ../sass/screen.scss */
+#outerWrapper #wrapper {
+  background: #eaeaea;
+}
+
+/* line 79, ../sass/screen.scss */
+.sidebar {
+  width: 320px;
+  min-height: 585px;
+  float: right;
+  background: #d0d0d0;
+}
+
+/* line 86, ../sass/screen.scss */
+.content {
+  width: 640px;
+}
+
+/* line 90, ../sass/screen.scss */
+footer {
+  background: #aaaaaa;
+  height: 75px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/* line 97, ../sass/screen.scss */
+footer section {
+  height: 75px;
+  width: 320px;
+  float: right;
+  background: #919191;
+}
+/* line 103, ../sass/screen.scss */
+footer nav {
+  width: 640px;
+}
+/* line 105, ../sass/screen.scss */
+footer nav ul {
+  padding: 0;
+}
+
+/* line 113, ../sass/screen.scss */
+.clear {
+  clear: both;
+}
