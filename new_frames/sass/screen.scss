@@ -1,3 +1,5 @@
+@import "compass/css3/box-shadow";
+
 // Variables --------------------
 $greyTest: #444444;
 $primary: #f90101;
@@ -41,6 +43,12 @@ html, body {
 	width: $pageWidth;
 }
 
+.photo {
+	width: 125px;
+	height: 150px;
+	background: lighten($greyTest, 25%);
+	margin-bottom: 15px;
+}
 
 // Layout Rules --------------------
 nav[role="main"] {
@@ -98,7 +106,6 @@ header[role="pageHeader"] {
 
 .sidebar {
 	width: $sideWidth;
-	min-height: 585px;
 	float: right;
 	background: lighten($greyTest, 55%);
 	section, ul {
@@ -154,7 +161,86 @@ header[role="pageHeader"] {
 }
 
 .content {
-	width: $pageWidth - $sideWidth;
+	width: 610px;
+	min-height: 585px;
+	padding: 15px;
+}
+
+.forum {
+	min-height: 175px;
+	color: #FFF;
+	font-size: 18px;
+	background: lighten($greyTest, 20%);
+	padding: 10px;
+	margin-bottom: 15px;
+	&.forumTop {
+		min-height: 100px;
+	}
+}
+
+.reviews {
+	margin-bottom: 25px;
+	padding: 10px;
+	&:hover{
+		@include single-box-shadow($greyTest, 0, 0, 10px);
+		cursor: pointer;
+	}
+	&.odd .photo {
+		float: left;
+		margin-right: 20px;
+	}
+	&.even .photo {
+		float: right;
+		margin-left: 20px;
+	}
+	h3 {
+		margin-top: 0;
+	}
+}
+
+.fullHeading {
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	background: lighten($greyTest, 30%);
+	padding-left: 15px;
+}
+
+.newsletter {
+	hgroup {
+		@extend .fullHeading;
+		h3, h4 {
+			display: inline-block;
+			font-size: 16px;
+			margin: 0;
+		}
+		h4:after {
+			content: "\00a0\00a0|\00a0\00a0";
+		}
+	}
+	.innerPad {
+		padding: 15px;
+	}
+	.left {
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 15px;
+	}
+}
+
+.pastList {
+	list-style-type: none;
+	padding-left: 15px;
+	li {
+		margin-bottom: 20px;
+		font-size: 16px;
+		a {
+			color: lighten($greyTest, 30%);
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
 }
 
 footer {
@@ -168,7 +254,7 @@ footer {
 		height: $navHeight;
 		width: $sideWidth;
 		float: right;
-		background: lighten($greyTest, 30%);
+		background: lighten($greyTest, 35%);
 	}
 	nav {
 		width: $pageWidth - $sideWidth;
