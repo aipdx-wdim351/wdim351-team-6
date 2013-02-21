@@ -7,6 +7,16 @@ $navHeight: 75px;
 $pageWidth: 960px; // Default page width
 $sideWidth: 320px; // Default sidebar width
 
+@mixin awesome-linkify-biotch ($color: #FFF) {
+	a {
+		color: $color;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
 // Global --------------------
 html, body {
 	margin: 0;
@@ -51,15 +61,7 @@ nav[role="main"] {
 	li {
 		display: inline-block;
 		margin-right: 15px;
-		a {
-			color: #FFF;
-			&:link{
-				text-decoration: none;
-			}
-			&:hover {
-				text-decoration: underline;
-			}
-		}
+		@include awesome-linkify-biotch;
 	}
 }
 
@@ -99,6 +101,56 @@ header[role="pageHeader"] {
 	min-height: 585px;
 	float: right;
 	background: lighten($greyTest, 55%);
+	section, ul {
+		margin-bottom: 10px;
+	}
+	ul {
+		list-style-type: none;
+		padding: 0 10px;
+	}
+}
+
+.tabs li {
+	display: inline-block;
+	padding: 15px 10px;
+	width: 77px;
+	background: lighten($greyTest, 45%);
+	text-align: center;
+	a {
+		text-decoration: none;
+		color: #FFF;
+		font-weight: bold;
+	}
+}
+
+.tabContainer {
+	min-height: 200px;
+	background: lighten($greyTest, 45%);
+}
+
+.call2action {
+	background: lighten($greyTest, 30%);
+	min-height: 150px;
+	padding: 10px;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.promos {
+	li {
+		margin-bottom: 10px;
+	}
+	a {
+		display: block;
+		padding: 10px 5px;
+		background: lighten($greyTest, 40%);
+		color: #FFF;
+		text-decoration: none;
+		&:hover {
+			background: lighten($greyTest, 45%);
+		}
+	}
 }
 
 .content {
