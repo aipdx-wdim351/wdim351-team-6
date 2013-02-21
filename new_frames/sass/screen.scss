@@ -1,3 +1,5 @@
+@import "compass/css3/box-shadow";
+
 // Variables --------------------
 $greyTest: #444444;
 $primary: #f90101;
@@ -98,7 +100,6 @@ header[role="pageHeader"] {
 
 .sidebar {
 	width: $sideWidth;
-	min-height: 585px;
 	float: right;
 	background: lighten($greyTest, 55%);
 	section, ul {
@@ -154,7 +155,47 @@ header[role="pageHeader"] {
 }
 
 .content {
-	width: $pageWidth - $sideWidth;
+	width: 610px;
+	min-height: 585px;
+	padding: 15px;
+}
+
+.forum {
+	min-height: 175px;
+	color: #FFF;
+	font-size: 18px;
+	background: lighten($greyTest, 20%);
+	padding: 10px;
+	margin-bottom: 15px;
+	&.forumTop {
+		min-height: 100px;
+	}
+}
+
+.reviews {
+	margin-bottom: 25px;
+	padding: 10px;
+	&:hover{
+		@include single-box-shadow($greyTest, 0, 0, 10px);
+		cursor: pointer;
+	}
+	.photo {
+		width: 125px;
+		height: 150px;
+		background: lighten($greyTest, 25%);
+		margin-bottom: 15px;
+	}
+	&.odd .photo {
+		float: left;
+		margin-right: 15px;
+	}
+	&.even .photo {
+		float: right;
+		margin-left: 15px;
+	}
+	h3 {
+		margin-top: 0;
+	}
 }
 
 footer {
@@ -168,7 +209,7 @@ footer {
 		height: $navHeight;
 		width: $sideWidth;
 		float: right;
-		background: lighten($greyTest, 30%);
+		background: lighten($greyTest, 35%);
 	}
 	nav {
 		width: $pageWidth - $sideWidth;
