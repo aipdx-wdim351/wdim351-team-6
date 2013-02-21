@@ -7,7 +7,7 @@ $navHeight: 75px;
 $pageWidth: 960px; // Default page width
 $sideWidth: 320px; // Default sidebar width
 
-// Reusable --------------------
+// Global --------------------
 html, body {
 	margin: 0;
 	padding: 0;
@@ -73,6 +73,24 @@ nav[role="main"] {
 	padding-bottom: $navHeight;
 	#wrapper {
 		background: lighten($greyTest, 65%);
+	}
+}
+
+header[role="pageHeader"] {
+	height: 200px;
+	background: lighten($greyTest, 25%);
+	margin-bottom: 15px;
+	.pageTitle {
+		position: relative;
+		background: lighten($greyTest, 45%);
+		margin: 0;
+		display: inline-block;
+	}
+	h1 {
+		top: 162px;
+	}
+	h2 {
+		float: right;
 	}
 }
 

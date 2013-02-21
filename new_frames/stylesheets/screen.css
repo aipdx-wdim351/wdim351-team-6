@@ -74,6 +74,28 @@ nav[role="main"] ul {
 }
 
 /* line 79, ../sass/screen.scss */
+header[role="pageHeader"] {
+  height: 200px;
+  background: #848484;
+  margin-bottom: 15px;
+}
+/* line 83, ../sass/screen.scss */
+header[role="pageHeader"] .pageTitle {
+  position: relative;
+  background: #b7b7b7;
+  margin: 0;
+  display: inline-block;
+}
+/* line 89, ../sass/screen.scss */
+header[role="pageHeader"] h1 {
+  top: 162px;
+}
+/* line 92, ../sass/screen.scss */
+header[role="pageHeader"] h2 {
+  float: right;
+}
+
+/* line 97, ../sass/screen.scss */
 .sidebar {
   width: 320px;
   min-height: 585px;
@@ -81,12 +103,12 @@ nav[role="main"] ul {
   background: #d0d0d0;
 }
 
-/* line 86, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .content {
   width: 640px;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 footer {
   background: #aaaaaa;
   height: 75px;
@@ -95,23 +117,23 @@ footer {
   bottom: 0;
   right: 0;
 }
-/* line 97, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 footer section {
   height: 75px;
   width: 320px;
   float: right;
   background: #919191;
 }
-/* line 103, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 footer nav {
   width: 640px;
 }
-/* line 105, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 footer nav ul {
   padding: 0;
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .clear {
   clear: both;
 }
