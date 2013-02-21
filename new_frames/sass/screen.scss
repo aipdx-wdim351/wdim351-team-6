@@ -43,6 +43,12 @@ html, body {
 	width: $pageWidth;
 }
 
+.photo {
+	width: 125px;
+	height: 150px;
+	background: lighten($greyTest, 25%);
+	margin-bottom: 15px;
+}
 
 // Layout Rules --------------------
 nav[role="main"] {
@@ -179,22 +185,61 @@ header[role="pageHeader"] {
 		@include single-box-shadow($greyTest, 0, 0, 10px);
 		cursor: pointer;
 	}
-	.photo {
-		width: 125px;
-		height: 150px;
-		background: lighten($greyTest, 25%);
-		margin-bottom: 15px;
-	}
 	&.odd .photo {
 		float: left;
-		margin-right: 15px;
+		margin-right: 20px;
 	}
 	&.even .photo {
 		float: right;
-		margin-left: 15px;
+		margin-left: 20px;
 	}
 	h3 {
 		margin-top: 0;
+	}
+}
+
+.fullHeading {
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	background: lighten($greyTest, 30%);
+	padding-left: 15px;
+}
+
+.newsletter {
+	hgroup {
+		@extend .fullHeading;
+		h3, h4 {
+			display: inline-block;
+			font-size: 16px;
+			margin: 0;
+		}
+		h4:after {
+			content: "\00a0\00a0|\00a0\00a0";
+		}
+	}
+	.innerPad {
+		padding: 15px;
+	}
+	.left {
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 15px;
+	}
+}
+
+.pastList {
+	list-style-type: none;
+	padding-left: 15px;
+	li {
+		margin-bottom: 20px;
+		font-size: 16px;
+		a {
+			color: lighten($greyTest, 30%);
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 }
 
