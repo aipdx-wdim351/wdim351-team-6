@@ -1,0 +1,170 @@
+// Your custom settings file to override Foundation defaults
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// ----------------------------------------
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "compass/css3";
+// @import "foundation/settings";
+// @import "foundation/functions/all";
+
+// Control which mixins you have access too
+
+// @import "foundation/mixins/clearfix";
+// @import "foundation/mixins/css-triangle";
+// @import "foundation/mixins/font-size";
+
+// Must include next two for semantic grid to work
+
+// @import "foundation/mixins/respond-to";
+// @import "foundation/mixins/semantic-grid";
+
+// @import "modular-scale";
+// @import "foundation/common/globals";
+
+// Must include the grid for any responsiveness
+
+// @import "foundation/components/grid";
+
+// Control which common styles get compiled
+
+// @import "foundation/common/typography";
+// @import "foundation/common/forms";
+
+// Control which components you get if customizing
+
+// @import "foundation/components/modules/buttons";
+// @import "foundation/components/modules/tabs";
+// @import "foundation/components/modules/ui";
+// @import "foundation/components/modules/topbar";
+// @import "foundation/components/modules/navbar";
+// @import "foundation/components/modules/orbit";
+// @import "foundation/components/modules/reveal";
+// @import "foundation/components/modules/offcanvas";
+// @import "foundation/components/modules/clearing";
+// @import "foundation/components/modules/joyride";
+
+// Media Queries Overrides
+// @import "foundation/components/modules/mqueries";
+
+$greyTest: #444444;
+
+nav.top-bar {
+	ul.right {
+		li {
+			margin-right: 5px;
+			&:hover {
+				background: none;
+			}
+		}
+	}
+}
+
+header[role="pageHeader"] {
+	background: lighten($greyTest, 25%);
+	margin-bottom: 15px;
+	hgroup {
+		height: 200px;
+		padding: 0;
+		position: relative;
+		.pageTitle {
+			position: absolute;
+			background: lighten($greyTest, 45%);
+			margin: 0;
+			display: inline-block;
+		}
+		h1 {
+			bottom: 0;
+			font-size: ms(4);
+		}
+		h2 {
+			right: 0;
+			font-size: ms(3);
+		}
+	}
+	
+}
+
+#wrapper {
+	background: lighten($greyTest, 60%);
+	margin-bottom: 75px;
+	div[role="content"]{
+		min-height: 585px;
+		padding: 15px;
+	}
+}
+
+div[role="sidebar"]{
+	background: lighten($greyTest, 50%);
+	padding: 0;
+	section, ul {
+		margin-bottom: 10px;
+	}
+	ul {
+		list-style-type: none;
+	}
+	.call2action {
+		background: lighten($greyTest, 30%);
+		min-height: 150px;
+		padding: 10px;
+		color: #FFF;
+		font-weight: bold;
+		font-size: 20px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.promos {
+		li {
+			margin-bottom: 10px;
+		}
+		a {
+			display: block;
+			padding: 10px 5px;
+			background: lighten($greyTest, 40%);
+			color: #FFF;
+			text-decoration: none;
+			&:hover {
+				background: lighten($greyTest, 45%);
+			}
+		}
+	}
+	.tabs {
+		margin-bottom: 0;
+	}
+	.tabs-content li {
+		padding: 10px 20px;
+		background: linear-gradient(color-stops(white, lighten($greyTest, 60%)));
+		min-height: 100px;
+	}
+}
+
+footer {
+	background: lighten($greyTest, 40%);
+	min-height: 75px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	section.columns {
+		min-height: 75px;
+		background: lighten($greyTest, 35%);
+	}
+	nav {
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+			min-height: 75px;
+			li {
+				line-height: 75px;
+				display: inline-block;
+				margin-right: 10px;
+			}
+		}
+	}
+}
