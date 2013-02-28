@@ -6190,13 +6190,13 @@ div[role="sidebar"] .tabs-content li {
   background: #919191;
   padding-left: 15px;
 }
-
-/* line 196, ../sass/app.scss */
-.newsletter hgroup h3, .newsletter hgroup h4 {
+/* line 191, ../sass/app.scss */
+.fullHeading h3, .newsletter hgroup h3, .fullHeading h4, .newsletter hgroup h4 {
   display: inline-block;
   font-size: 16px;
   margin: 0;
 }
+
 /* line 201, ../sass/app.scss */
 .newsletter hgroup h4:after {
   content: "\00a0\00a0|\00a0\00a0";
@@ -6220,7 +6220,7 @@ div[role="sidebar"] .tabs-content li {
 /* line 218, ../sass/app.scss */
 .pastList li {
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 17px;
 }
 /* line 221, ../sass/app.scss */
 .pastList li a {
@@ -6232,6 +6232,11 @@ div[role="sidebar"] .tabs-content li {
 }
 
 /* line 230, ../sass/app.scss */
+.signup {
+  padding: 25px;
+}
+
+/* line 234, ../sass/app.scss */
 footer {
   background: #aaaaaa;
   min-height: 75px;
@@ -6240,21 +6245,26 @@ footer {
   bottom: 0;
   right: 0;
 }
-/* line 237, ../sass/app.scss */
+/* line 241, ../sass/app.scss */
 footer section.columns {
   min-height: 75px;
   background: #9d9d9d;
 }
-/* line 242, ../sass/app.scss */
+/* line 246, ../sass/app.scss */
 footer nav ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
   min-height: 75px;
 }
-/* line 247, ../sass/app.scss */
+/* line 251, ../sass/app.scss */
 footer nav ul li {
   line-height: 75px;
   display: inline-block;
   margin-right: 10px;
+}
+
+/* line 260, ../sass/app.scss */
+.centerMe {
+  text-align: center;
 }
