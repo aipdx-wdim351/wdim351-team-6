@@ -60,6 +60,13 @@ $greyTest: #444444;
 	margin-bottom: 15px;
 }
 
+.map {
+	width: 300px;
+	height: 300px;
+	background: lighten($greyTest, 25%);
+
+}
+
 nav.top-bar {
 	ul.right {
 		li {
