@@ -1,0 +1,121 @@
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import
+//   "foundation/components/grid",
+//   "foundation/components/visibility",
+//   "foundation/components/block-grid",
+//   "foundation/components/type",
+//   "foundation/components/buttons",
+//   "foundation/components/forms",
+//   "foundation/components/custom-forms",
+//   "foundation/components/button-groups",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/split-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/section",
+//   "foundation/components/top-bar",
+//   "foundation/components/orbit",
+//   "foundation/components/reveal",
+//   "foundation/components/joyride",
+//   "foundation/components/clearing",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/inline-lists",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/side-nav",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/magellan",
+//   "foundation/components/tables",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/dropdown";
+
+.top-bar {
+	height: 48px;
+	line-height: 48px;
+	ul {
+		background: none;
+		&.right {
+			li {
+				padding-right: 7px;
+				a.red-button {
+					display: inline-block;
+					height: 56px;
+					line-height: 56px;
+					text-indent: 35px;
+					font-size: 18px;
+					letter-spacing: -1px;
+					width: 233px;
+					background: url('../images/button-top.png') top left no-repeat;
+					outline: none;
+					&:hover {
+						background: url('../images/button-top.png') top left no-repeat;
+						color: #E8E8E8;
+					}
+				}
+			}
+			.mobileJoin {
+				display: none;
+			}
+		}
+	}
+	&.expanded {
+		.right {
+			li {
+				padding-right: 0;
+				a.red-button {
+					display: none;
+				}
+			}
+			.mobileJoin {
+				display: block;
+			}
+		}
+	}
+}
+
+.container {
+	padding: 0 20px;
+	margin-top: 20px;
+}
+
+.slideshow {
+ // styles here
+}
+
+.greyBack {
+	background: #f3f3f3;
+	padding: 20px 0;
+	.subGroup {
+		display: inline-block;
+	}
+}
+
+.centerMe {
+	text-align: center;
+	img {
+		display: inline-block;
+	}
+}
+
+.middleLi {
+	margin: 0 20px;
+}
+
+.subGroup {
+	min-height: 100px;
+	background: #555;
+}
